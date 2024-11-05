@@ -1,0 +1,146 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title CRM Dashboard
+    link(rel="stylesheet" href="styles.css")
+    link(rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css")
+  body
+    // Sidebar Toggle Button for mobile view
+    button.sidebar-toggle
+      i.bx.bx-menu
+
+    .dashboard
+      // Sidebar
+      aside.sidebar
+        .logo
+          img(src="images/logo.png" alt="Logo")
+          h1 Dashboard <span>v.01</span>
+        ul.nav
+          li
+            a(href="#")
+              img(src="images/dashboard.png" alt="Dashboard")
+              span Dashboard
+          li
+            a(href="#")
+              img(src="images/product.png" alt="Product")
+              span Product
+          li.active
+            a(href="#")
+              img(src="images/customers.png" alt="Customers")
+              span Customers
+          li
+            a(href="#")
+              img(src="images/income.png" alt="Income")
+              span Income
+          li
+            a(href="#")
+              img(src="images/promote.png" alt="Promote")
+              span Promote
+          li
+            a(href="#")
+              img(src="images/help.png" alt="Help")
+              span Help
+        .profile
+          img(src="images/evano.jpg" alt="Evano")
+          .profile-info
+            p.profile-name Evano
+            p.profile-position Project Manager
+
+      // Main content
+      main.content
+        h2 Hello Evano 👋,
+        section.customers
+          .customers-header
+            .customers-title
+              h3 All Customers
+              p.customers-subtitle Active Members
+            // Search Bar
+            .search-bar
+              .search-wrapper
+                img.search-icon(src="images/search.png" alt="Search")
+                input(type="text" placeholder="Search")
+          // Table
+          .table-wrapper
+            table
+              thead
+                tr
+                  th Customer Name
+                  th Company
+                  th Phone Number
+                  th Email
+                  th Country
+                  th Status
+              tbody
+                // Repeat for each customer
+                tr
+                  td Jane Cooper
+                  td Microsoft
+                  td (225) 555-0118
+                  td jane@microsoft.com
+                  td United States
+                  td.status.active Active
+                tr
+                  td Floyd Miles
+                  td Yahoo
+                  td (205) 555-0100
+                  td floyd@yahoo.com
+                  td Kiribati
+                  td.status.inactive Inactive
+                tr
+                  td Ronald Richards
+                  td Adobe
+                  td (302) 555-0107
+                  td ronald@adobe.com
+                  td Israel
+                  td.status.inactive Inactive
+                tr
+                  td Marvin McKinney
+                  td Tesla
+                  td (252) 555-0126
+                  td marvin@tesla.com
+                  td Iran
+                  td.status.active Active
+                tr
+                  td Jerome Bell
+                  td Google
+                  td (629) 555-0129
+                  td jerome@google.com
+                  td Réunion
+                  td.status.active Active
+                tr
+                  td Kathryn Murphy
+                  td Microsoft
+                  td (406) 555-0120
+                  td kathryn@microsoft.com
+                  td Curaçao
+                  td.status.active Active
+                tr
+                  td Jacob Jones
+                  td Yahoo
+                  td (208) 555-0112
+                  td jacob@yahoo.com
+                  td Brazil
+                  td.status.active Active
+                tr
+                  td Kristin Watson
+                  td Facebook
+                  td (704) 555-0127
+                  td kristin@facebook.com
+                  td Åland Islands
+                  td.status.inactive Inactive
+          // Pagination
+          .pagination
+            span Showing data 1 to 8 of 256K entries
+            nav.pagination-controls
+              a(href="#") &lt;
+              a(href="#") 1
+              a(href="#") 2
+              a(href="#") 3
+              a(href="#") 4
+              span ... 
+              a(href="#") 40
+              a(href="#") &gt;
+          // script
+          script(src="js/script.js")

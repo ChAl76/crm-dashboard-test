@@ -1,0 +1,22 @@
+{
+  "name": "crm-dashboard-customers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/styles.scss styles.css --watch",
+    "pug": "pug index.pug --pretty --watch"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.80.5"
+  },
+  "dependencies": {
+    "pug": "^3.0.3"
+  }
+}

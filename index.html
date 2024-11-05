@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css">
+  </head>
+  <body>
+    <!-- Sidebar Toggle Button for mobile view-->
+    <button class="sidebar-toggle"><i class="bx bx-menu"></i></button>
+    <div class="dashboard">
+      <!-- Sidebar-->
+      <aside class="sidebar">
+        <div class="logo"><img src="images/logo.png" alt="Logo">
+          <h1>Dashboard <span>v.01</span></h1>
+        </div>
+        <ul class="nav">
+          <li><a href="#"><img src="images/dashboard.png" alt="Dashboard"><span>Dashboard</span></a></li>
+          <li><a href="#"><img src="images/product.png" alt="Product"><span>Product</span></a></li>
+          <li class="active"><a href="#"><img src="images/customers.png" alt="Customers"><span>Customers</span></a></li>
+          <li><a href="#"><img src="images/income.png" alt="Income"><span>Income</span></a></li>
+          <li><a href="#"><img src="images/promote.png" alt="Promote"><span>Promote</span></a></li>
+          <li><a href="#"><img src="images/help.png" alt="Help"><span>Help</span></a></li>
+        </ul>
+        <div class="profile"><img src="images/evano.jpg" alt="Evano">
+          <div class="profile-info">
+            <p class="profile-name">Evano</p>
+            <p class="profile-position">Project Manager</p>
+          </div>
+        </div>
+      </aside>
+      <!-- Main content-->
+      <main class="content">
+        <h2>Hello Evano 👋,</h2>
+        <section class="customers">
+          <div class="customers-header">
+            <div class="customers-title">
+              <h3>All Customers</h3>
+              <p class="customers-subtitle">Active Members</p>
+            </div>
+            <!-- Search Bar-->
+            <div class="search-bar">
+              <div class="search-wrapper"><img class="search-icon" src="images/search.png" alt="Search">
+                <input type="text" placeholder="Search">
+              </div>
+            </div>
+          </div>
+          <!-- Table-->
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Customer Name</th>
+                  <th>Company</th>
+                  <th>Phone Number</th>
+                  <th>Email</th>
+                  <th>Country</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Repeat for each customer-->
+                <tr>
+                  <td>Jane Cooper</td>
+                  <td>Microsoft</td>
+                  <td>(225) 555-0118</td>
+                  <td>jane@microsoft.com</td>
+                  <td>United States</td>
+                  <td class="status active">Active</td>
+                </tr>
+                <tr>
+                  <td>Floyd Miles</td>
+                  <td>Yahoo</td>
+                  <td>(205) 555-0100</td>
+                  <td>floyd@yahoo.com</td>
+                  <td>Kiribati</td>
+                  <td class="status inactive">Inactive</td>
+                </tr>
+                <tr>
+                  <td>Ronald Richards</td>
+                  <td>Adobe</td>
+                  <td>(302) 555-0107</td>
+                  <td>ronald@adobe.com</td>
+                  <td>Israel</td>
+                  <td class="status inactive">Inactive</td>
+                </tr>
+                <tr>
+                  <td>Marvin McKinney</td>
+                  <td>Tesla</td>
+                  <td>(252) 555-0126</td>
+                  <td>marvin@tesla.com</td>
+                  <td>Iran</td>
+                  <td class="status active">Active</td>
+                </tr>
+                <tr>
+                  <td>Jerome Bell</td>
+                  <td>Google</td>
+                  <td>(629) 555-0129</td>
+                  <td>jerome@google.com</td>
+                  <td>Réunion</td>
+                  <td class="status active">Active</td>
+                </tr>
+                <tr>
+                  <td>Kathryn Murphy</td>
+                  <td>Microsoft</td>
+                  <td>(406) 555-0120</td>
+                  <td>kathryn@microsoft.com</td>
+                  <td>Curaçao</td>
+                  <td class="status active">Active</td>
+                </tr>
+                <tr>
+                  <td>Jacob Jones</td>
+                  <td>Yahoo</td>
+                  <td>(208) 555-0112</td>
+                  <td>jacob@yahoo.com</td>
+                  <td>Brazil</td>
+                  <td class="status active">Active</td>
+                </tr>
+                <tr>
+                  <td>Kristin Watson</td>
+                  <td>Facebook</td>
+                  <td>(704) 555-0127</td>
+                  <td>kristin@facebook.com</td>
+                  <td>Åland Islands</td>
+                  <td class="status inactive">Inactive</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Pagination-->
+          <div class="pagination"><span>Showing data 1 to 8 of 256K entries</span>
+            <nav class="pagination-controls"><a href="#">&lt;</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><span>... </span><a href="#">40</a><a href="#">&gt;</a></nav>
+          </div>
+          <!-- script-->
+          <script src="js/script.js"></script>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
