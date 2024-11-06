@@ -648,3 +648,19 @@ table {
     }
   }
 }
+
+@media (max-width: 500px) {
+  .sidebar-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .sidebar {
+    width: 46%;
+  }
+}
