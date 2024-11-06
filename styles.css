@@ -490,6 +490,12 @@ table td.status.inactive {
   .sidebar-toggle.active .bx-menu {
     transform: rotate(90deg);
   }
+
+  .sidebar-toggle i {
+    display: block;
+    position: fixed;
+  }
+  
   .dashboard {
     flex-direction: column;
     margin-bottom: 10em;
@@ -577,5 +583,19 @@ table td.status.inactive {
     margin: 20px 0;
   }
 }
-
+@media (max-width: 500px) {
+  .sidebar-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .sidebar {
+    width: 46%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
