@@ -549,6 +549,11 @@ table {
     transform: rotate(90deg);
   }
 
+  .sidebar-toggle i {
+    display: block;
+    position: fixed;
+  }
+  
   .dashboard {
     flex-direction: column;
     margin-bottom: 10em;
@@ -558,7 +563,7 @@ table {
     position: fixed;
     top: 0;
     left: -100%; // Hide sidebar by default
-    width: 35%;
+    width: 40%;
     height: 100%;
     transition: left 0.3s ease;
     z-index: 999;
